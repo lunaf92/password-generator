@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator</title>
+</head>
+
+<body>
+    <h1>Password Generator</h1>
+    <div id="inputs">
+        <div id="password_generator"><label for="length">Length of your password</label>
+            <div>
+                <input type="number" id="length" name="length" value="20" placeholder="Password Length" />
+            </div>
+            <div>
+                <input type="checkbox" class="check" id="upperCase" name="upperCase" checked value="on" /><label for="upperCase">Uppercase
+                    Characters</label>
+            </div>
+            <div>
+                <input type="checkbox" class="check" id="lowerCase" name="lowerCase" checked value="on" /><label for="lowerCase">Lowercase
+                    Characters</label>
+            </div>
+            <input type="checkbox" class="check" id="number" name="number" checked value="on" /><label for="number">Numbers</label>
+            <div>
+                <input type="checkbox" class="check" id="specialChar" name="specialChar" checked value="on" /><label
+                    for="specialChar">Special Characters</label>
+            </div>
+            <div>
+                <input type="text" id="pw_output" name="pw_output" value="" placeholder="Password" />
+            </div>
+        </div>
+            <div>
+                <input type="submit" id="generate_pw" name="generate_pw" value="generate password" />
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
