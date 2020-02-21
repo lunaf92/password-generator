@@ -89,11 +89,12 @@ function createObj() {
  */
 function listen() {
     const button = document.getElementById("generate_pw")
+    const pwField = document.getElementById("pw_output")
+    
     button.addEventListener("click", function () {
         let len = document.getElementById("length").value
         let arr = createObj()
         let size = Object.keys(arr).length - 1
-        const pwField = document.getElementById("pw_output")
         pwField.value = generatePw(len, size)
     });
 
